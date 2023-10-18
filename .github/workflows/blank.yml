@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the Meta Platform
       - name: Ryan Durham
-        run: Spectrum.net
+        run: TOP
 
       # Runs a set of commands using the Meta Platform
       - name: Ryan Durham
