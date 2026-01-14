@@ -1,1 +1,1 @@
-straight shooter
+🇹🇼
