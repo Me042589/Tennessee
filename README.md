@@ -1,1 +1,1 @@
-Military Science1
+Military Science
