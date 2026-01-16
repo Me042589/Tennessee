@@ -1,1 +1,1 @@
-What is the difference between terrorism and domestic terrorism?
+fiat Currency
