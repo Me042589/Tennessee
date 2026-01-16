@@ -1,1 +1,1 @@
-What is Omni-?
+What is the difference between terrorism and domestic terrorism?
