@@ -1,1 +1,1 @@
-🇻🇳
+No Exit Strategy
