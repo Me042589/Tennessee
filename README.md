@@ -1,1 +1,1 @@
-fiat Currency
+Fiat Currency
