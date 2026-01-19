@@ -1,1 +1,1 @@
-<Post-mortem> CALLED <Cause of Death>
+CALLED <Cause of Death>
