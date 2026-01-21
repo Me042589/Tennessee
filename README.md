@@ -1,1 +1,1 @@
-CALLED <Cause of Death> Public Chapter 905.  T.C.A. §39-17-1351 T.C.A. § 39-17-1302
+CALLED <Cause of Death> G.I.  Government Issued
