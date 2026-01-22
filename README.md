@@ -1,1 +1,1 @@
-CALLED "Ryan"
+CALLED "What is a Righteous seat?"
