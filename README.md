@@ -1,1 +1,1 @@
-CALLED <Cause of Death> (42 U.S.C. § 2000cc-1) Religious Liberty
+CALLED "Cut to the Chase"
