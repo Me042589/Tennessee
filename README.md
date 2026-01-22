@@ -1,1 +1,1 @@
-CALLED "Why would America ever allow China white inside the country?"
+CALLED "For the sake of science, what is China White?"
