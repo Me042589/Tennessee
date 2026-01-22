@@ -1,1 +1,1 @@
-CALLED "What is a Righteous seat?"
+CALLED "What happens to anyone or anything that attempts to hook Ryan Durham or his family with something they didn't ask for."
