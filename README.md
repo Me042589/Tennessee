@@ -1,1 +1,1 @@
-CALLED "For the sake of science, what is China White?"
+CALLED "For the sake of science, what is 白 (bái)?"
