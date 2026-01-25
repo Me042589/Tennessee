@@ -1,1 +1,1 @@
-CALLED "For the sake of medical science, what is "白" ("bái")?" <Simoleons>
+CALLED "For the sake of science, what is "白" ("bái")?" <Simoleons>
