@@ -1,1 +1,1 @@
-CALLED "For the sake of science, what is "白" ("bái")?" <Simoleons>
+CALLED "What is "白魔法." <Simoleons>
