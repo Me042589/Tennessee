@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CALLED "For the sake of science, What is "白" ("bái")?"
+name: CALLED "What is 白魔法."
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
