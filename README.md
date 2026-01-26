@@ -1,1 +1,1 @@
-CALLED "What is "白魔法." <Simoleons>
+CALLED "What is "λευκή μαγεία." <Simoleons>
