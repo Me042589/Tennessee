@@ -1,1 +1,1 @@
-CALLED "What is "λευκή μαγεία." <Simoleons> MIDDLE-EAST "Infidel."
+CALLED "What is "λευκή μαγεία." <Simoleons>  "Arryan" 
