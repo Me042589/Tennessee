@@ -1,1 +1,1 @@
-CALLED "What is "λευκή μαγεία." <Simoleons> Year of 1776 A.D. till present day
+CALLED "What is "λευκή μαγεία." <Simoleons> Year of B.C. till present day
