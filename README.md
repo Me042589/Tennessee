@@ -1,1 +1,1 @@
-CALLED "What is "λευκή μαγεία." <Simoleons> Year of 1822 A.D.
+CALLED "What is "λευκή μαγεία." <Simoleons> Year of 1822 A.D. till present day
