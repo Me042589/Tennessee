@@ -1,1 +1,1 @@
-CALLED "What is "λευκή μαγεία." <Simoleons>  "Arryan." "Re-commissioning."
+CALLED "Army, Navy and Air Force football teams."
