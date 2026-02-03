@@ -1,1 +1,1 @@
-Book <Simoleons>
+Book <Simoleons> "Puck a number between 5 and 7."
