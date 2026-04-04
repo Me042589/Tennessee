@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: We don't know anybody
+name: We don't know anybody and we all want to work for Ryan Durham
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
