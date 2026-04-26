@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Cheating Wife, I was wrong. She never cheated
+name: Cheating Wife 
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
