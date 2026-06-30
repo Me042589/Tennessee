@@ -24,7 +24,7 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Deploy to Putnam County, Tennessee
+name: Deploy to anywhere but Putnam County, Tennessee
 
 on:
   push:
