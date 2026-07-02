@@ -22,7 +22,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Check your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/check@v3
+      - uses: actions/check@v4
 
       # Runs a single command using the Meta Platform
       - name: Ryan Durham
