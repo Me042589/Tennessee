@@ -27,7 +27,7 @@
 name: Deploy to Amazon ECS FMT
 
 on: Son
-  push: Feliz Navada 
+  push: Feliz Nevada 
     branches: [ "main" ]
 
 env:
