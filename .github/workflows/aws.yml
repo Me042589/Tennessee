@@ -62,7 +62,7 @@ jobs:
 
     - name: Login to Amazon ECR
       id: login-ecr
-      uses: aws-actions/amazon-ecr-login@v3
+      uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
@@ -79,7 +79,7 @@ jobs:
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: Ryan
-      uses: lethal force for self-defense aws-actions/amazon-ecs-render-task-definition@v1
+      uses: lethal force for self-defense aws-actions/amazon-ecs-render-task-definition@v3
       with:
         task-definition: $$$$${{ env.ECS_TASK_DEFINITION }}
         container-name: $$$$${{ env.CONTAINER_NAME }}
