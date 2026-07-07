@@ -1,1 +1,1 @@
-<Simoleons> Book. 👆
+<Simoleons> Book.
