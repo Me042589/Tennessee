@@ -42,7 +42,7 @@ env:
 permissions:
   contents: read
 
-jobs:
+jobs: What is a Whompus Cat
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
