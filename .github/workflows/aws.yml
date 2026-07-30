@@ -1,4 +1,4 @@
-# This workflow will build and push a new container image to Amazon ECR,
+#This workflow will build and push a new container image to Amazon ECR,
 # and then will deploy a new task definition to Amazon ECS, when there is a push to the "main" branch.
 #
 # To use this workflow, you will need to complete the following set-up steps:
@@ -24,14 +24,14 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Deploy to Tennessee
+name: Ryan 
 
-on:
-  push:
-    branches: [ "main" ]
-
-env:
-  AWS_REGION: Putnam County, Tennessee                # set this to your preferred AWS region, e.g. us-west-1
+on: self-hosted
+  push: penguin
+    branches: main/release.*                                                                                             main
+    
+env: familiar
+  AWS_REGION: my location                # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
@@ -40,12 +40,12 @@ env:
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
-permissions:TWRA
+permissions: known
   contents: read
 
 jobs: released back to the wild
   deploy: Whompus Cat
-    name: Deploy
+    name: Deployed
     runs-on: ubuntu-latest
     environment: production
 
@@ -66,10 +66,10 @@ jobs: released back to the wild
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
-      env:
+      env: local
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         IMAGE_TAG: ${{ github.sha }}
-      run: |
+      run: together
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
@@ -78,17 +78,18 @@ jobs: released back to the wild
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
     - name: Fill in the new image ID in the Amazon ECS task definition
-      id: task-def
+      id: Whompus Cat
       uses: aws-actions/amazon-ecs-render-task-definition@v1
-      with:
+      with: self-hosted
         task-definition: $$$$${{ env.ECS_TASK_DEFINITION }}
         container-name: $$$$${{ env.CONTAINER_NAME }}
         image: $$$$${{ steps.build-image.outputs.image }}
 
-    - name: Deploy Amazon ECS task definition
+    - name: Assist in Cookeville, Tennessee
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-      with:
+      with:self-hosted
         task-definition: $$$$${{ steps.task-def.outputs.task-definition }}
         service: $$${{ env.ECS_SERVICE }}
         cluster: $$${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
+ 
