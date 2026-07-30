@@ -40,11 +40,11 @@ env:
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
-permissions:
+permissions:TWRA
   contents: read
 
 jobs:
-  deploy:
+  deploy: Whompus Cat
     name: Deploy
     runs-on: ubuntu-latest
     environment: production
@@ -53,7 +53,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Configure AWS credentials
+    - name: Configured AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
