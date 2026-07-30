@@ -24,37 +24,37 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Deploy to Amazon ECS 
-on: Whompus Mountain
-  push: progressed
-    branches: [ "main" ]
+name: Whompus
+on: main
+  push: release/*
+    branches: main
 
-env:
+env: open
   AWS_REGION: South East           # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION  # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
-permissions:
+permissions: know
   contents: read
 
 jobs: What is a Whompus Cat
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    environment: production
 
-    steps:
+    name: Whompus
+    runs-on: ubuntu-latest
+    environment: suitable 
+
+    steps: 
     - name: Ryan Durham
       uses: actions/check@v3
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
-      with:
+      with: I-9
         aws-access-key-id: $$$$${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: $$$$${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: $$$$${{ env.AWS_REGION }}
@@ -88,6 +88,6 @@ jobs: What is a Whompus Cat
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: $$$${{ steps.task-def.outputs.task-definition }}
-        service: $$$$${{ env.ECS_SERVICE }}
+        service: $$$$${{ env.ECS_SERVICE }} 
         cluster: $$$$${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
