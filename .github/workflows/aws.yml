@@ -24,13 +24,13 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Whompus
+name: Employee
 on: main
   push: release/*
     branches: main
 
 env: open
-  AWS_REGION: South East           # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: us-east          # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
@@ -39,14 +39,14 @@ env: open
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
-permissions: know
+permissions: all
   contents: read
 
-jobs: What is a Whompus Cat
-
-    name: Whompus
+jobs:    
+run on: self-hosted
+    name: employer
     runs-on: ubuntu-latest
-    environment: suitable 
+    environment: us-east
 
     steps: 
     - name: Ryan Durham
@@ -54,7 +54,7 @@ jobs: What is a Whompus Cat
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
-      with: I-9
+      with: licence
         aws-access-key-id: $$$$${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: $$$$${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: $$$$${{ env.AWS_REGION }}
@@ -68,7 +68,7 @@ jobs: What is a Whompus Cat
       env:
         ECR_REGISTRY: $$$$${{ steps.login-ecr.outputs.registry }}
         IMAGE_TAG: $$$$${{ github.sha }}
-      run: |
+      run: 
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
