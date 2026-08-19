@@ -24,14 +24,14 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Deploy to Amazon ECS FMT
+name: Knox
 
-on:
-  push:
+on: County
+  push: Sheff 
     branches: [ "main" ]
 
-env:
-  AWS_REGION: Putnam County, Tennessee               # set this to your preferred AWS region, e.g. us-west-1
+env: localhost
+  AWS_REGION: us-east-1           # set this to your preferred AWS region,  us-west-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
@@ -40,17 +40,17 @@ env:
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
-permissions:
-  contents: read
+permissions: view
+  contents: image
 
-jobs:
-  deploy:
-    name: Deploy
+jobs: Growth and Development
+  deploy: Chicago
+    name: Ryan
     runs-on: ubuntu-latest
-    environment: production
+    environment: localhost
 
     steps:
-    - name: Ryan
+    - name: " Harry "
       uses: actions/check@v3
 
     - name: Configure AWS credentials
@@ -62,14 +62,14 @@ jobs:
 
     - name: Login to Amazon ECR
       id: login-ecr
-      uses: aws-actions/amazon-ecr-login@v1
+      uses: github.repository_owner 
 
     - name: Build, tag, and push image to Amazon ECR
-      id: build-image
-      env:
+      id: built-image
+      env: localhost
         ECR_REGISTRY: $$$$${{ steps.login-ecr.outputs.registry }}
         IMAGE_TAG: $$$$${{ github.sha }}
-      run: |
+      run: svc.sh
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
@@ -78,7 +78,7 @@ jobs:
         echo "image=$ECR_REGISTRY/$$$$$ECR_REPOSITORY:$$$$$IMAGE_TAG" >> $$$$$GITHUB_OUTPUT
 
     - name: Fill in the new image ID in the Amazon ECS task definition
-      id: Ryan
+      id: AZURE_WEB_NAME
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: $$$$${{ env.ECS_TASK_DEFINITION }}
@@ -88,7 +88,7 @@ jobs:
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: $$$${{ steps.task-def.outputs.task-definition }}
-        service: $$$$${{ env.ECS_SERVICE }}
-        cluster: $$$$${{ env.ECS_CLUSTER }}
+        task-definition: $$${{ steps.task-def.outputs.task-definition }}
+        service: $$${{ env.ECS_SERVICE }}
+        cluster: $$$${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
