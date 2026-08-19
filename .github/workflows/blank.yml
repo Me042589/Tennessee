@@ -1,20 +1,20 @@
 # This is a basic workflow to help you get started with Actions
 
-name: The Whompus Cat
+name: Asylum Seekers
 
 # Controls when the workflow will run
-on:
+on: UBUNTU-LATEST
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
+  push: CHICAGO
     branches: [ "main" ]
-  pull_request:
+  pull_request: $$$
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: WEBSYSTEMVIEWER
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs: fb
   # This workflow contains a single job called "build"
   build: Whompus Cat Trap
     # The type of runner that the job will run on
@@ -26,11 +26,11 @@ jobs:
       - uses: actions/check@v3
 
       # Runs a single command using the runners 
-      - name: Ryan
+      - name: John
         run: Mate
 
       # Runs a set of commands using the runners 
       - name: Run a multi-line script
-        run:
+        run: Check-Mate
           echo Add other actions to build,
           echo test, and deploy your project.
