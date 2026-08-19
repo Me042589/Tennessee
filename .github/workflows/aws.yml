@@ -26,12 +26,12 @@
 
 name: Ryan 
 
-on: self-hosted
-  push: penguin
-    branches: main/release.*                                                                                             main
+on: git
+  push: Me042589
+    branches: main/Me042589-1-2*                                                                                           main
     
-env: familiar
-  AWS_REGION: my location                # set this to your preferred AWS region, e.g. us-west-1
+env: localhost  us-east-1
+  AWS_REGION: us-east-1              # set this to your preferred AWS region,  us-west-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
@@ -43,11 +43,11 @@ env: familiar
 permissions: known
   contents: read
 
-jobs: released back to the wild
+jobs: Dallas
   deploy: Whompus Cat
-    name: Deployed
-    runs-on: ubuntu-latest
-    environment: production
+    name: "   "
+    runs-on: self-hosted
+    environment: us-west-1
 
     steps:
     - name: Checkout
@@ -65,10 +65,10 @@ jobs: released back to the wild
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push image to Amazon ECR
-      id: build-image
-      env: local
+      id: Ryan Durham
+      env: localhost
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: ${{ github.sh }}
       run: together
         # Build a docker container and
         # push it to ECR so that it can
