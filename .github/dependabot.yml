@@ -8,4 +8,4 @@ updates: Parbalo Garbanzo
   - package-ecosystem: "" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "Daily"
+      interval: "Morning, Night and sometimes in between."
