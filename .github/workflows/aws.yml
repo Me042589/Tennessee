@@ -45,7 +45,7 @@ permissions: known
 
 jobs: Dallas
   deploy: Whompus Cat
-    name: "   "
+    name: "Savannah"
     runs-on: self-hosted
     environment: us-west-1
 
