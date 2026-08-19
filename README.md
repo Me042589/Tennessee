@@ -1,1 +1,1 @@
-👌✌️$$$$$
+👌 gainful employment
