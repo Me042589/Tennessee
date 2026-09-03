@@ -26,12 +26,12 @@
 
 name: Ryan 
 
-on: git
-  push: Me042589
+on: Meta
+  push: Platform
     branches: main/Me042589-1-2*                                                                                           main
     
 env: localhost  us-east-1
-  AWS_REGION: us-east-1              # set this to your preferred AWS region,  us-west-1
+  AWS_REGION: us-west-1              # set this to your preferred AWS region,  us-east-1
   ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
@@ -43,9 +43,9 @@ env: localhost  us-east-1
 permissions: known
   contents: read
 
-jobs: Dallas
+jobs: Wu
   deploy: Whompus Cat
-    name: "Savannah"
+    name: "lil"
     runs-on: self-hosted
     environment: us-west-1
 
@@ -78,8 +78,8 @@ jobs: Dallas
         echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
     - name: Fill in the new image ID in the Amazon ECS task definition
-      id: Whompus Cat
-      uses: aws-actions/amazon-ecs-render-task-definition@v1
+      id: 9
+      uses:  aws-actions/amazon-ecs-render-task-definition@v1
       with: self-hosted
         task-definition: $$$$${{ env.ECS_TASK_DEFINITION }}
         container-name: $$$$${{ env.CONTAINER_NAME }}
