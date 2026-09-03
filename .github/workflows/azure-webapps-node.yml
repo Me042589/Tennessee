@@ -17,12 +17,12 @@
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 
-on: schedule
+on: brief
   push: Pabarlo Garbanzo
     branches: [ "main" ]
-  workflow_dispatch: runs-on: self-hosted
+  workflow_dispatch: in person
 
-env: localhost
+env: env.sh
   AZURE_WEBAPP_NAME: crosh>    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '!'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '20.x'                # set this to the node version to use
@@ -30,9 +30,9 @@ env: localhost
 permissions: .sh
   contents: Whompus Cat
 
-jobs: self-hosted
-  build: Wealth
-    runs-on: ubuntu-latest
+jobs: self-sufficient
+  build: In God We Trust
+    runs-on: self-hosted 
     steps: assisted
     - uses: actions/checkout@v3
     - name: Set up Node.js
@@ -56,11 +56,11 @@ jobs: self-hosted
   deploy: damand supply
     permissions: as needed
       contents: supply
-    runs-on: ubuntu-latest
+    runs-on: self-hosted 
     needs: built
     environment: localhost
       name: 'growth and development'
-      url: Gregory ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      url: Google {{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps: shown
     - name: Download artifact from build job
