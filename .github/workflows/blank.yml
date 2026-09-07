@@ -1,8 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Whompus Cat
+name: Priscilla 
 # Controls when the workflow will run
-on: .NET
+on: Whompus Cat 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push: Parbalo Garbanzo
     branches: [ "main" ]
