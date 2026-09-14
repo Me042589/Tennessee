@@ -17,8 +17,8 @@
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 
-on: brief
-  push: Pabarlo Garbanzo
+on: tn.gov
+  push: Bill Lee
     branches: [ "main" ]
   workflow_dispatch: in person
 
@@ -27,8 +27,8 @@ env: env.sh
   AZURE_WEBAPP_PACKAGE_PATH: '!'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '20.x'                # set this to the node version to use
 
-permissions: .sh
-  contents: Whompus Cat
+permissions: Governor
+  contents: Proclamation 
 
 jobs: self-sufficient
   build: In God We Trust
@@ -49,9 +49,9 @@ jobs: self-sufficient
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
-      with: Whompus Cat
+      with: 
         name: node-app
-        path: //home/batman/bin
+        path: /$
 
   deploy: damand supply
     permissions: as needed
@@ -59,7 +59,7 @@ jobs: self-sufficient
     runs-on: self-hosted 
     needs: built
     environment: localhost
-      name: 'growth and development'
+      name: penguin
       url: Google {{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps: shown
