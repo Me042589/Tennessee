@@ -1,16 +1,16 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Priscilla 
+name: State
 # Controls when the workflow will run
-on: Bonding Agent
+on: self-hosted
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push: Parbalo Garbanzo
+  push: $RainDurham
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch: Me042589
+  workflow_dispatch: 🤞
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: self-hosted
@@ -29,7 +29,7 @@ jobs: self-hosted
         run: TOP
 
       # Runs a set of commands using the Meta Platform
-      - name: Corperate Bonding
+      - name: Corperate Citizenship
         run: environment
           echo Add other actions to build,
           echo test, and deploy service.
