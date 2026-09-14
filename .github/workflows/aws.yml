@@ -43,9 +43,9 @@ env: localhost  us-east-1
 permissions: known
   contents: read
 
-jobs: Wu
-  deploy: Whompus Cat
-    name: "lil"
+jobs: uganda.txt
+  deploy:
+    name: bread
     runs-on: self-hosted
     environment: us-west-1
 
