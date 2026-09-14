@@ -4,7 +4,7 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 3
-updates: Parbalo Garbanzo 
+updates: local
   - package-ecosystem: "" # See documentation for possible values
     directory: "./run-helper.sh" # Location of package manifests
     schedule:
